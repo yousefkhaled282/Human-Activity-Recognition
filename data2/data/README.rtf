@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ri0\qj\partightenfactor0
+
+\f0\fs24 \cf0 There is a separate folder for each subject. Each subject\'92s folder is then divided into a training folder and a test folder. The training folder corresponds to the training data collection and the test folder corresponds to the test data collection. Refer to Table 1 in Huang and Onnela (2020) for the training and test data collection procedures.\
+\
+\pard\pardeftab720\ri0\qj\partightenfactor0
+
+\b \cf0 Training folder
+\b0 :\
+\
+There is a separate folder for each activity in the training data collection. Refer to the second section of Table 1 in Huang and Onnela (2020) for details on training data collection. In each folder, we provide the data for the following: gyroscope in front pocket phone, accelerometer in front pocket phone, gyroscope in back pocket phone, accelerometer in back pocket phone.\
+\
+Each csv file includes the:\
+timeElapsed = number of seconds since the subject began performing the activity\
+x = measurement for x axis\
+y = measurement for y axis\
+z = measurement for z axis\
+label = activity label based on video footage\
+\
+
+\b Test folder
+\b0 :\
+\
+This folder is organized by step of the test data collection. We have Steps 1 through 6. Refer to the third section of Table 1 in Huang and Onnela (2020) for details on the various steps during test data collection. For each step, the data is provided for the: gyroscope in front pocket phone, accelerometer in front pocket phone, gyroscope in back pocket phone, accelerometer in back pocket phone.\
+\
+Each csv file includes the:\
+timestamp = number of milliseconds since January 1, 1970 UTC\
+x = measurement for x axis\
+y = measurement for y axis\
+z = measurement for z axis\
+label = activity label based on video footage\
+\
+In each csv file, some labels are listed as \'93NA\'94. Those rows occurred either before the step had commenced or after the step had ended. \
+\
+In Step 4, the subject repeated the same route four times, varying the orientation of the front pocket phone each time. For this particular step, the following abbreviations are used in the subfolder names:\
+\'93appleUp\'94: phone is right side up\
+\'93appleDown\'94: phone is upside down\
+\'93faceAgainstLeg\'94: the screen of the phone is against the leg\
+\'93faceOppositeLeg\'94: the screen of the phone is not against the leg\
+}
